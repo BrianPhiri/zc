@@ -4,23 +4,23 @@ class Zc < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/BrianPhiri/zc/releases/download/v0.2.0/zc_0.2.0_darwin_arm64.tar.gz"
-      sha256 "2d7c3d934947b99eec0d7c5488e7e2082e6d1430e42cea74617f3ea200a88161"
+      url "https://github.com/BrianPhiri/zc/releases/download/v0.3.0/zc_0.3.0_darwin_arm64.tar.gz"
+      sha256 "5c5e328bf3063e29f984bdd4189fd3df9fd74e4b83c02fe57dce2d4daa70901e"
     end
     on_intel do
-      url "https://github.com/BrianPhiri/zc/releases/download/v0.2.0/zc_0.2.0_darwin_amd64.tar.gz"
-      sha256 "5af349ada92a0c492f4eccc7d5124b9731f25c6462e7fa2c7e7336e7b34d9cab"
+      url "https://github.com/BrianPhiri/zc/releases/download/v0.3.0/zc_0.3.0_darwin_amd64.tar.gz"
+      sha256 "567f50e3d0e6540722b0c04fce2504d80af2ede942b6f6d77e3dbd8c4a8aa323"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/BrianPhiri/zc/releases/download/v0.2.0/zc_0.2.0_linux_arm64.tar.gz"
-      sha256 "49a6bb4da1faca30779f78d70e628d326d103de1ec68305ab57ff53e6403f6a2"
+      url "https://github.com/BrianPhiri/zc/releases/download/v0.3.0/zc_0.3.0_linux_arm64.tar.gz"
+      sha256 "c5793614b73afa32d1c5d267601a53d75a4778808f2c4f446c6ee723efd9b6d7"
     end
     on_intel do
-      url "https://github.com/BrianPhiri/zc/releases/download/v0.2.0/zc_0.2.0_linux_amd64.tar.gz"
-      sha256 "d0c2134298e37a9e76d3f2164e3bff1d5c88d63750cacc134f7b38cbe431d2e1"
+      url "https://github.com/BrianPhiri/zc/releases/download/v0.3.0/zc_0.3.0_linux_amd64.tar.gz"
+      sha256 "b8d26cb85e4eee6d56d3a45cacd31462480c2822bf2d335d37651b17b885b2ed"
     end
   end
 
@@ -29,6 +29,6 @@ class Zc < Formula
   end
 
   test do
-    assert_match "zc 0.2.0", shell_output("#{bin}/zc version")
+    assert_match "zc 0.3.0", shell_output("#{bin}/zc version")
   end
 end
