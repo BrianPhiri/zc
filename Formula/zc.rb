@@ -4,23 +4,23 @@ class Zc < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/BrianPhiri/zc/releases/download/v0.4.0/zc_0.4.0_darwin_arm64.tar.gz"
-      sha256 "4e61c4cb6e905651b67f6bb54d11b628eaf1436a5fbf39778db7105ac86c7463"
+      url "https://github.com/BrianPhiri/zc/releases/download/v0.5.0/zc_0.5.0_darwin_arm64.tar.gz"
+      sha256 "b8b6c614e2c86d6cce69ca30134f216a079cceb2b9c60767dfde50346f8795b0"
     end
     on_intel do
-      url "https://github.com/BrianPhiri/zc/releases/download/v0.4.0/zc_0.4.0_darwin_amd64.tar.gz"
-      sha256 "8b543938b19a4a7ac4356372dcd4fc1939040c89fcaa5b3bb81422ef0eeb1dc5"
+      url "https://github.com/BrianPhiri/zc/releases/download/v0.5.0/zc_0.5.0_darwin_amd64.tar.gz"
+      sha256 "04149321b6099289ec96d984e9082395debc138b998e75b1b575d6a8e25a8b1b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/BrianPhiri/zc/releases/download/v0.4.0/zc_0.4.0_linux_arm64.tar.gz"
-      sha256 "24b8476c87e1918d00e5b9dd57070d2d4483e9833fbb66a6f460099d6491a87c"
+      url "https://github.com/BrianPhiri/zc/releases/download/v0.5.0/zc_0.5.0_linux_arm64.tar.gz"
+      sha256 "0659325ccc3d76fb4e6845fadacba2086172c13edbf2229f877d88659cb08951"
     end
     on_intel do
-      url "https://github.com/BrianPhiri/zc/releases/download/v0.4.0/zc_0.4.0_linux_amd64.tar.gz"
-      sha256 "541e05e2483bd2a8d95466aa16a71b4e784f18172b4883976fdef9f4dd1c66c7"
+      url "https://github.com/BrianPhiri/zc/releases/download/v0.5.0/zc_0.5.0_linux_amd64.tar.gz"
+      sha256 "2fb0cf7f574ab62a4a07540988b6eceb229c3d747ee4873beb1c668ede16d40c"
     end
   end
 
@@ -29,6 +29,6 @@ class Zc < Formula
   end
 
   test do
-    assert_match "zc 0.4.0", shell_output("#{bin}/zc version")
+    assert_match "zc 0.5.0", shell_output("#{bin}/zc version")
   end
 end
